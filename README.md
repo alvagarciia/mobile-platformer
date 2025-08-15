@@ -16,7 +16,7 @@
 <h3 align="center">Mobile Platformer</h3>
 
   <p align="center">
-    Platformer game made for mobile devices with gradle and java
+    Platformer game made for mobile devices
     <br />
     <br />
     <a href="https://github.com/alvagarciia/mobile-platformer/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
@@ -63,8 +63,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Car Prices Showcase ML](./media/carprice-ML-demo.gif)
-![Car Prices Showcase DL](./media/carprice-DL-demo.gif)
+![MP Showcase](./media/mp-show.jpg)
 
 This web application predicts the market price of used cars based on various features such as mileage, brand, model, fuel type, and more. Built using Python and Streamlit, the app leverages machine learning models to provide pricing estimates, assisting both buyers and sellers in making informed decisions.
 
@@ -173,7 +172,8 @@ The repo also contains the scripts used to train each model inside the `scripts`
 
 ### Demo
 
-![Platformer Demo](./media/platformer-demo.gif)
+![Platformer Demo](./media/platformer-demo1.gif)
+![Platformer Demo](./media/platformer-demo2.gif)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -212,6 +212,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 This project contains visual assets that are the property of their respective owners.
 Nintendo and related characters are trademarks of Nintendo. 
 These assets are included here for educational purposes only and are not licensed for commercial use.
+
 If you reuse this code, replace these assets with your own or with freely available alternatives.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
