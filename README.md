@@ -34,7 +34,6 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#features">Features</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -66,23 +65,22 @@
 
 ![MP Showcase](./media/mp-show.jpg)
 
-This web application predicts the market price of used cars based on various features such as mileage, brand, model, fuel type, and more. Built using Python and Streamlit, the app leverages machine learning models to provide pricing estimates, assisting both buyers and sellers in making informed decisions.
+This mobile application is a 2D platformer game built with **Java** and **Gradle** in **Android Studio**.
 
-My personal objective with this project was to put in practice everything I learnt for working with Machine Learning and Deep Learning models by using it to create a piece of software. In addition, I aimed to experiment creating this app using Streamlit, which I hadn't used prior to this. 
+The player controls a character who can move across a 2D space with gravity, collide with objects and enemies, and shoot projectiles using the down arrow button. As this is an early version, there is currently no win condition and the player cannot “die.”
 
-Both models were trained from scratch using a Kaggle [dataset](https://www.kaggle.com/datasets/taeefnajib/used-car-price-prediction-dataset/data) uploaded by Taeef Najib, made up of a collection of automotive information extracted from the popular automotive marketplace website, https://www.cars.com. This dataset comprises 4,009 data points, each representing a unique vehicle listing, and includes nine distinct features providing valuable insights into the world of automobiles.
+This project was developed as the **Honors Project** in my Programming Paradigms class, where I adapted an existing game I had previously built in **JavaScript** and **Python** into a native Android application. (While these other versions are not currently on GitHub, feel free to reach out if you’d like to see them.)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+My personal objectives with this project were to:
+- Apply the four principles of Object-Oriented Programming in a real-world context.
+- Work extensively with JSON for storing and loading game data.
+- Build a game with multiple interacting classes, each handling its own sprite behavior and interactions.
+- Follow a Model–View–Controller (MVC) structure for better code organization.
+- Gain experience with mobile development, branching out from my usual work in web applications.
 
-
-### Features
-
-- User input form for entering car specifications
-- Pre-trained ML and DL models for price prediction
-- Built-in preprocessing (encoding, imputation, etc.)
-- Works from serialized models using `.joblib` and `.keras` files
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 ### Built With
@@ -142,11 +140,14 @@ The `.apk` is provided for demonstration purposes and may not be fully optimized
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Once ran on Streamlit, users have the option of entering their own car data or using a pre-defined test case. For each option, they also have the option of getting a prediction using the Machine Learning model or the Deep Learning model. 
+Once installed, players can control the character using the on-screen directional buttons. The down arrow fires a projectile.
 
-After selecting either of the options, the respective model should display the prediction on the website.
+Gameplay features include:
+- Projectile interactions: Projectiles can defeat enemies, with some enemies being permanently destroyed while others are temporarily disabled.
+- Collisions & physics: Bricks block all movement except projectiles, and gravity ensures objects stay grounded.
+- Enemy behaviors: Different enemy types react uniquely to projectile hits, adding variety to gameplay.
 
-The repo also contains the scripts used to train each model inside the `scripts` folder, so that anyone can take a look at how these models were trained. Moreover, the `models` folder contains the trained files for both the ML and DL models.
+*Note*: This is a prototype, so the game has no final level or loss condition. It’s intended to demonstrate core gameplay mechanics, OOP principles, and mobile development capabilities.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
