@@ -42,7 +42,8 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#option1">Option 1</a></li>
+        <li><a href="#option2">Option 2</a></li>
       </ul>
     </li>
     <li>
@@ -86,11 +87,8 @@ Both models were trained from scratch using a Kaggle [dataset](https://www.kaggl
 
 ### Built With
 
-[![Pandas][pandas]](https://github.com/pandas-dev/pandas)
-[![NumPy][numpy]](https://github.com/numpy/numpy)
-[![Scikit-Learn][scikit-learn]](https://github.com/scikit-learn/scikit-learn)
-[![Tensorflow][tensorflow]](https://github.com/tensorflow/tensorflow)
-[![Streamlit][streamlit]](https://github.com/streamlit/streamlit)
+* [![Gradle][gradle]](https://github.com/gradle/gradle)
+* [![Android Studio][androids]](https://developer.android.com/studio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -99,59 +97,43 @@ Both models were trained from scratch using a Kaggle [dataset](https://www.kaggl
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+You can explore this project in two main ways:
+1. **Run the pre-built `.apk`** on your Android device or emulator (fastest).
+2. **Open the source code in Android Studio** to explore, modify, and build it yourself.
 
 ### Prerequisites
 
-* Python 3.10+
-  ```sh
-  pyenv install python-3.12.5
-  ```
+**For .apk file:**
+- An Android device or emulator (Android 5.0+ recommended).
+- Optionally, enable "Install from Unknown Sources" in device settings.
 
-### Installation
+**For full source build:**
+- [Android Studio](https://developer.android.com/studio) installed.
+- JDK (Java Development Kit) — included with most Android Studio installations.
+- Internet connection for Gradle to download dependencies on first build.
 
-1. Clone the repo
+### Option 1 — Run the `.apk` (Quick Demo)
+1. Download the `mobile-platformer.apk` file from the `/release` folder.
+2. Transfer it to your Android device or load it into an Android emulator.
+3. Open it to install the app.  
+   *(You may need to enable "Install from Unknown Sources" in your device settings.)*
+
+**Note:**  
+The `.apk` is provided for demonstration purposes and may not be fully optimized for all screen sizes. For the most consistent experience, try running it in an Android Studio emulator.
+
+---
+
+### Option 2 — Open in Android Studio (Full Source)
+1. Clone the repository:
    ```sh
    git clone https://github.com/alvagarciia/mobile-platformer.git
    cd mobile-platformer
    ```
-2. Set up a virtual environment
-   Using `venv` (comes with Python):
-   ```sh
-   python -m venv venv
-   ```
-   Or using `conda` (if preferred):
-   ```sh
-   conda create -n car-price python=3.10
-   conda activate car-price
-   ```
-3. Activate environment
-   **Using `venv`:**
-   ```sh
-   # Windows
-    venv\Scripts\activate
+2. Open the project in Android Studio.
+3. Allow Gradle to sync and download dependencies.
+4. Select a device or emulator from the Android Studio device manager. The `Pixel 4a` device was used for production.
+5. Click **Run** to build and launch the app.
 
-    # Linux / macOS
-    source venv/bin/activate
-   ```
-4. Install dependencies
-   ```sh
-   pip install --upgrade pip
-   pip install -r requirements.txt
-   ```
-5. Run the Streamlit app:
-   **Standard usage:**
-    ```bash
-   streamlit run app.py
-   ```
-
-    **If you're using WSL:**
-    ```bash
-   streamlit run app.py --server.headless true --server.enableCORS false --server.address=0.0.0.0
-   ```
-   This allows you to access the app from your Windows browser when running Streamlit inside WSL.
-   
-6. Open the url provided in terminal, usually `localhost:8501`.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -242,8 +224,6 @@ hield]: https://img.shields.io/github/license/alvagarciia/mobile-platformer.svg?
 [linkedin-url]: https://linkedin.com/in/alvaro-garciam
 
 
-[pandas]: https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white
-[numpy]: https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white
-[scikit-learn]: https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white
-[tensorflow]: https://img.shields.io/badge/Tensorflow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white
-[streamlit]: https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white
+[gradle]: https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white
+[androids]: https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white
+[json]: https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white
